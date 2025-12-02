@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f8f8f8;
+    color: #1e1e1e;
+}
+
+/* ----------------------------- HERO ----------------------------- */
+.hero {
+    text-align: center;
+    padding: 60px 15%;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4b6683;
+}
+
+/* ----------------------------- VISION + MISSION ----------------------------- */
+.vm-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 10%;
+}
+
+.box {
+    width: 45%;
+}
+
+.box h2 {
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.line {
+    width: 4px;
+    height: 28px;
+    background: #f2b55f;
+    border-radius: 4px;
+}
+
+.line.blue {
+    background: #00a9e0;
+}
+
+.box p {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4b6683;
+}
+
+/* ----------------------------- BOTTOM BANNER ----------------------------- */
+.banner {
+    margin-top: 60px;
+    background: #ff2a45;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 60px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ----------------------------- RESPONSIVE ----------------------------- */
+@media (max-width: 900px) {
+    .vm-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .banner {
+        border-radius: 40px;
+        width: 95%;
+    }
+}
