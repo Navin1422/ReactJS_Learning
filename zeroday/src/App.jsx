@@ -8,11 +8,12 @@ import PostionComponent from './positioning/position-component.jsx'
 import TrustedbyComponent from "./trusted-by/trusted-by-component";
 import ImpactGlanceComponent from "./Impact-Glance/Impact-Glance.jsx"
 import FlexWrapComponent from './Flex-Wrap/Flex-Wrap-Component.jsx';
+import OurPromisesComponent from "./Our-Promises/our-promises.jsx";
 
 function App() {
   return (
     <div> 
-      <FlexWrapComponent />
+      <OurPromisesComponent />
     </div>
   );
 }
