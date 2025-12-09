@@ -1,21 +1,27 @@
-import './App.css';
-import FlexBoxComponent from "./flex-box/flex-box-component";
-import HelloWorldComponent from "./Hello-world/Hello_World_Component";
-import StudentForm from "./StudentRegistrationForm/StudentRegistrationForm.jsx"
-import LeadersTomorrowComponent from "./Leaders-Tomorrow/leaders-tomorrow-component.jsx"
-import SymbolOfExcellanceComponent from './Symbol-Of-Excellance/Symbol-Of-Excellance.jsx';
-import PostionComponent from './positioning/position-component.jsx'
-import TrustedbyComponent from "./trusted-by/trusted-by-component";
-import ImpactGlanceComponent from "./Impact-Glance/Impact-Glance.jsx"
-import FlexWrapComponent from './Flex-Wrap/Flex-Wrap-Component.jsx';
-import OurPromisesComponent from "./Our-Promises/our-promises.jsx";
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import FetchApiComponent from "./fetch-api/fetch-api-component";
+import UseEffectComponent from './use-effect-practice/use-effect-component.jsx';
+import UseEffectPracticeTwo from "./use-effect-practice/use-effect-practice-2";
+import UseEffectFetchApi from "./use-effect-practice/use-effect-fetch-api.jsx";
 
 function App() {
   return (
-    <div> 
-      <OurPromisesComponent />
+    <div>
+      <Routes>
+        <Route path = "/api-fetch" element={<FetchApiComponent />} />
+        <Route path = "/use-effect-practice" element={<UseEffectComponent />} />
+        <Route
+          path="/use-effect-practice-2"
+          element={<UseEffectPracticeTwo />}
+        />
+        <Route
+          path="use-effect-fetch-api"
+          element={<UseEffectFetchApi />}
+        />
+      </Routes>
     </div>
   );
 }
 
-export default App
+export default App;

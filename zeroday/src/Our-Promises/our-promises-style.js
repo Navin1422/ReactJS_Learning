@@ -3,7 +3,7 @@ export const OurPromisesStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: ${(props) => props.gapLength};
   align-items: center;
 
   h1 {

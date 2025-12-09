@@ -1,19 +1,19 @@
 import React from "react";
-import FlexWrapStyle from "./Flex-Wrap-Style.js"
+import FlexWrapStyled from "./Flex-Wrap-Style";
 
 const FlexWrapComponent = () => {
-    return(
-        <FlexWrapStyle>
-            <div className="parent">
-        <div className="child_1"></div>
-        <div className="child_2"></div>
-        <div className="child_3"></div>
-        <div className="child_4"></div>
-        <div className="child_5"></div>
-        <div className="child_6"></div>
-            </div>
-        </FlexWrapStyle>
-    )
-}
+  return (
+    <FlexWrapStyled>
+      <div className="Main">
+        <div className="Box">One</div>
+        <div className="Box">Two</div>
+        <div className="Box">Three</div>
+        <div className="Box">Four</div>
+        <div className="Box">Five</div>
+        <div className="Box">Six</div>
+      </div>
+    </FlexWrapStyled>
+  );
+};
 
 export default FlexWrapComponent;
