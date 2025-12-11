@@ -4,6 +4,7 @@ import FetchApiComponent from "./fetch-api/fetch-api-component";
 import UseEffectComponent from './use-effect-practice/use-effect-component.jsx';
 import UseEffectPracticeTwo from "./use-effect-practice/use-effect-practice-2";
 import UseEffectFetchApi from "./use-effect-practice/use-effect-fetch-api.jsx";
+import SignupFormComponent from './signup-form-api/signup-form-component.jsx';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           element={<UseEffectPracticeTwo />}
         />
         <Route
-          path="use-effect-fetch-api"
+          path="/use-effect-fetch-api"
           element={<UseEffectFetchApi />}
         />
+        <Route path="/signup-form" element={<SignupFormComponent />} />
       </Routes>
     </div>
   );
